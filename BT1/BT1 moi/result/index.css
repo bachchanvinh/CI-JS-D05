@@ -11,8 +11,21 @@
 }
 #all h1 {
     background-color: bisque;
-    padding: 20pt;
+    padding: 27px 50px ;
+    margin:16px;
+    border: thick solid rgb(252, 216, 172)
 }
+#input{
+    width: 230px;
+}
+
+#alert {
+    margin: 10pt 0 0;
+    color: red;
+    font-weight: bold;
+}
+
+
 #list {
     background-color: mediumspringgreen;
     padding: 0;
@@ -20,7 +33,13 @@
     border: black solid thin;
     padding:10px
 }
-
+#list #blank{
+    display: flex;
+    flex-flow:wrap row;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0;
+}
 #list li{
     display: flex;
     justify-content: space-between;
@@ -31,8 +50,23 @@
 #list span{
     margin:0 10pt;
     color: black;
-    width: 220px;
+    width: 220px;height: fit-content;
+    padding-left: 5px;
+    background-color:  rgb(140, 252, 186);
+    border-radius: 2pt;
+    border: thin solid;
+    box-shadow: 2px 2px;
+}
 
+#list .complete span{
+    text-decoration: line-through;
+    color:rgba(81, 80, 133, 0.644) ;
+}
+#list span:hover,#list span:focus{
+    background-color: rgb(216, 241, 125);
+}
+#list span p{
+    margin: 2px 0
 }
 #list li button{
    width: 30px; 
@@ -40,15 +74,11 @@
    border-radius: 20pt;
    margin-right: 5px;
    background-color: white;
-   box-shadow: 10px;
    border: black thin solid;
-   font-weight: boldgit ;
+   font-weight: bold;
+   box-shadow: 2px 2px;
 }
 #list li button:hover {
     background-color:rgb(73, 73, 255);
     color:white
-}
-#list .complete span{
-    text-decoration: line-through;
-    color:rgb(156, 154, 255) ;
 }
